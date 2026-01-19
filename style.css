@@ -6,17 +6,27 @@
 body{
       font-family: "Inter", sans-serif;
 
+
 }
 .btn{
     padding: 12px 16px;
     border-radius: 10000px;
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
     color: #FFFFFF;
+    border: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
 }
 
 
 /* header style */
-
+header{
+    
+    /* padding: 100px; */
+    max-width: ;
+}
 
 
 /* nav style */
@@ -26,13 +36,20 @@ nav{
 }
 .nav_item{
     color: #FFFFFF;
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid brown; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
+hr {
+    border: none;         
+    height: 1px;          
+    background: rgba(255, 255, 255, 0); 
+    opacity: 0.05;
 }
 ul{
     display: flex;
@@ -43,11 +60,12 @@ li{
     list-style: none;
 }
 a{
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: 300;
 }
 .nav_item>h2{
-    font-size: 2rem;
+    font-size: clamp(30px, 4vw, 60px);
 }
 
 .Wave{
@@ -57,4 +75,190 @@ a{
 
   -webkit-text-fill-color: transparent;
   font-weight: 700;
+}
+#menu{
+    display: none;
+}
+/* header containt */
+
+.header_containt{
+    padding: 0;
+    /* border: 1px solid #FFFFFF; */
+    max-width: 600px;
+    /* margin: 0 auto; */
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: -150px;
+    
+}
+
+
+.container{
+    background-image: url(assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    /* background-position: center;  */
+    /* background-size: 100% auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 100px; */
+    padding: 100px 0;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.mCl{
+    width: 400px;
+}
+.circle{
+    position: relative;
+    /* border: 1px solid #ff2fcf; */
+    margin-top: 100px
+}
+#new{
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    background-color: #00FF88;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    border-radius: 1000px;
+}
+.mic{
+    position: absolute;
+    right: 39%;
+    top: 25%;
+    /* width:50px ; */
+}
+.header_containt h2{
+    margin-top: 20px;
+    font-size: clamp(40px, 4vw, 50px);
+}
+.header_containt p{
+    font-weight: 200;
+    margin: 20px 0;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+#sec_btn{
+    background: transparent;
+    border: 2px solid green;
+    color: green;
+    gap: 10px;
+    font-weight: bolder;
+}
+.mic{
+    /* width: 20%; */
+}
+
+
+
+/* responsive Design */
+
+
+/* mobile */
+@media screen and (max-width:576px) {
+    
+ul{
+    display: none;
+}
+.nav_btn{
+    display: none;
+}
+#menu{
+    display: inline-flex;
+}
+.nav_item{
+    justify-content: space-between;
+    margin: 0 5%;
+}
+.mCl{
+    width: 70%;
+}
+/* .mCl{
+    width: 300px;
+} */
+.mic{
+    width: 20%;
+}
+.mic{
+    position: absolute;
+    right: 41%;
+    top: 25%;
+    /* width:50px ; */
+}
+.container{
+  background-size: cover; 
+  background-position: center;
+     /* background-repeat: no-repeat; */
+
+   /* background-repeat: no-repeat; */
+    background-position: center ;
+    /* background-size: cover; */
+
+}
+.container{
+    background-image: url(assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    max-width: 580px;
+    margin: 0 auto;
+}
+.header_containt{
+    margin-top: -100px;
+    width: 400px;
+}
+#new{
+    right: 45px;
+    font-size: 1.25rem;
+}
+
+}
+
+
+
+
+/* tab device*/
+@media screen and (min-width:577px) and (max-width:922px) {
+    
+.nav_item{
+    margin: 0 10%;
+   
+}
+#menu{
+    display: inline-flex;
+}
+ul{
+    display: none;
+}
+.nav_btn{
+    display: none;
+}
+.mCl{
+    width: 300px;
+}
+.mic{
+    width: 15%;
+}
+.mic{
+    position: absolute;
+    right: 43%;
+    top: 25%;}
+#new{
+    right: 100px;
+    font-size: 1.25rem;
+}
+
 }
