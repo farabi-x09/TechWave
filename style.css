@@ -78,6 +78,7 @@ a{
 }
 #menu{
     display: none;
+    font-size: 1.5rem;
 }
 /* header containt */
 
@@ -174,10 +175,11 @@ ul{
 }
 #menu{
     display: inline-flex;
+    
 }
 .nav_item{
     justify-content: space-between;
-    margin: 0 5%;
+    margin: 0 auto;
 }
 .mCl{
     width: 70%;
@@ -223,6 +225,10 @@ ul{
 #new{
     right: 45px;
     font-size: 1.25rem;
+}
+.header_containt p{
+    margin: 20px;
+    line-height: 1.5;
 }
 
 }
