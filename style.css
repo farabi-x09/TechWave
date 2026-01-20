@@ -62,7 +62,6 @@ hr {
 ul{
     display: flex;
     gap: 30px;
-    /* background-color: #ce3e3e; */
 }
 li{
     list-style: none;
@@ -105,8 +104,6 @@ a{
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
-    /* background-position: center;  */
-    /* background-size: 100% auto; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -555,8 +552,6 @@ ul{
 .meet_container{
     flex-direction: column;
     text-align: center;
-    /* justify-content: center;
-    align-items: center; */
 }
 .midea{
     margin: 0 auto;
