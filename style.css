@@ -288,8 +288,6 @@ a{
 }
 .card{
     width: 380px;
-    /* height: 440px; */
-    /* border-radius: 1000px; */
 }
 .card_text{
    background-color: #250D44;
@@ -546,8 +544,12 @@ ul{
 }
 .card{
     margin: 20px auto;
+    max-width: 300px;
+    margin: 0 auto;
 }
-
+.card_img img{
+ width: 100%;
+}
 
 .meet_container{
     flex-direction: column;
@@ -640,7 +642,13 @@ ul{
 .card{
     margin: 20px auto;
 }
-
+.meet_container{
+    flex-direction: column;
+    text-align: center;
+}
+.midea{
+    margin: 0 auto;
+}
 .footer_container{
     padding: 100px 150px;
 }
