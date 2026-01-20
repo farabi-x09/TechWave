@@ -341,7 +341,55 @@ a{
 }
 
 
+/* meet style */
+.meet{
+    color: white;
+    padding: 100px 20px;
+    margin: 0 auto;
+    
+    max-width: 1200px;
+}
+.meet h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+.meet_container{
+background-color: #351165;
+border-radius:50px ;
+padding: 40px;
+display: flex;
+gap: 20px;
+}
 
+.midea{
+    display: flex;
+    max-width: 185px;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+.icon img{
+    width: 50%;
+}
+.icon{
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+.meet_text h4{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.meet_text p{
+    line-height: 1.5;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
 
 
 /* responsive Design */
@@ -453,6 +501,22 @@ ul{
 .card{
     margin: 20px auto;
 }
+
+
+.meet_container{
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center;
+    align-items: center; */
+}
+.midea{
+    margin: 0 auto;
+}
+
+
+
+
+
 
 }
 
