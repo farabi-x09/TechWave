@@ -182,30 +182,83 @@ a{
     line-height: 1.8;
 }
 
+.about_num{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align:  center;
+    padding-bottom:50px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+.about_num h4{
+    color: #00FF88;
+    font-size: 2.75rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.about_num p{
+    font-weight: 200;
+    font-size: 1.25rem;
+}
 
+/* Why Choose TechWave */
 
-
-
-/* .why{
-    background-color: #1A0B2E;
+.why{
+    background-color: #230E3D;
     color: white;
+    padding: 100px 10px ;
 }
 .why_h2{
-    font-size: 2rem;
+    font-size: 3.25rem;
     text-align: center;
     padding:50px 0;
 }
 .why_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2 , 200px) 300px;
+    grid-template-rows: repeat(2 , 240px) 290px;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 20px;
+   radius: 100px;
 }
 .why_container>div{
     background-color: #351165;
-} */
-
+    border-radius:40px;
+}
+.why_container h4{
+    font-size: 1.65rem;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.why_container p{
+    font-weight: 100;
+    line-height: 1.8;
+}
+.why_1{
+     grid-row: span 2;
+     padding: 105px 40px;
+   
+}
+.why_1 img{
+    /* width: 100%; */
+}
+.why_2{
+     grid-column: span 2;
+     padding: 40px;
+}
+.why_3{
+     grid-column: span 2;
+      padding: 40px;
+}
+.why_4{
+     grid-column: span 2;
+     padding: 40px;
+}
+.why_5{
+     padding: 40px;
+}
 
 
 
@@ -286,9 +339,37 @@ ul{
 .div_p{
     padding: 0 30px;
 }
+.about_num{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.about_num h4{
+    font-size: 2rem;
+}
+.about_num p{
+    font-size: 1rem;
+}
+
+/* Why Choose TechWave */
+
+.why_container{
+    grid-template-columns: 1fr;
+    max-width: 450px;
+}
+
+.why{
+    padding: 20px;
+}
+.why_h2{
+    font-size: 2rem;
+    text-align: center;
+    padding:50px 0;
+    /* display: inline-block; */
 }
 
 
+
+}
 
 /* tab device*/
 @media screen and (min-width:577px) and (max-width:922px) {
@@ -333,5 +414,23 @@ ul{
 .div_p{
     padding: 0 30px;
 }
+
+.about_num{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+/* Why Choose TechWave */
+
+
+.why_container{
+    grid-template-columns: 1fr;
+    max-width: 500px;
+}
+
+
+
+
+
+
 
 }
