@@ -19,8 +19,18 @@ body{
     align-items: center;
     
 }
-
-
+.btn {
+    transition: all 0.4s ease; 
+    cursor: pointer;
+}
+.nav_btn:hover, #sec_btn:hover {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0) !important; 
+    box-shadow: 0px 4px 15px rgba(109, 213, 237, 0.5); 
+    transform: translateY(-3px); 
+}
+main{
+    background-color: #1A0B2E;
+}
 /* header style */
 
 
@@ -241,9 +251,7 @@ a{
      padding: 105px 40px;
    
 }
-.why_1 img{
-    /* width: 100%; */
-}
+
 .why_2{
      grid-column: span 2;
      padding: 40px;
@@ -259,7 +267,78 @@ a{
 .why_5{
      padding: 40px;
 }
+/* featured */
 
+
+.featured{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding: 100px 10px;
+}
+.featured h3{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+.card{
+    width: 380px;
+    /* height: 440px; */
+    /* border-radius: 1000px; */
+}
+.card_text{
+   background-color: #250D44;
+    padding: 25px;
+    border-radius:0 0 30px 30px;
+}
+.card_text h4{
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+.card_text p{
+    line-height: 1.5;
+    font-weight: 200;
+}
+.time{
+    
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    color: #00FF88;
+    font-weight: bolder;
+}
+.time img{
+    width: 25px;
+}
+.card_img{
+    position: relative;
+}
+.play_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 99;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%); 
+    }
+    50% {
+        transform: translate(-50%, -85%);
+    }
+    100% {
+        transform: translate(-50%, -50%); 
+    }
+}
 
 
 
@@ -367,7 +446,13 @@ ul{
     /* display: inline-block; */
 }
 
-
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    margin: 20px auto;
+}
 
 }
 
@@ -427,10 +512,32 @@ ul{
     max-width: 500px;
 }
 
+.cards{
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+}
+.card{
+    margin: 20px auto;
+}
 
 
 
 
+}
 
+
+
+
+/* laptop */
+@media screen and (min-width:923px) and (max-width:1280px){
+    
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    margin: 20px auto;
+}
 
 }
